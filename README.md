@@ -14,11 +14,11 @@ User Flow for Blog Website-
 
 4.Admin Login
  - Enter credentials to log in as an admin:
-    Username: admin
-    Password: admin@123
+     - Username: admin
+     - Password: admin@123
 
 5.Admin Dashboard
  - Once logged in, the admin can manage blog details through the following functionalities:
-    Pending blogs - all the blogs submitted by the user and the admin can accept and reject a particular blog and send a comment.
-    Approved blogs - list of all approved blogs.
-    Rejected blogs - list of all rejected blogs.
+     - Pending blogs - all the blogs submitted by the user and the admin can accept and reject a particular blog and send a comment.
+     - Approved blogs - list of all approved blogs.
+     - Rejected blogs - list of all rejected blogs.
