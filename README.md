@@ -25,5 +25,5 @@
 ## Deployment Link
 
 ```bash
-https://lunacal-kohl.vercel.app/
+https://capricontechnology.netlify.app
 ```
