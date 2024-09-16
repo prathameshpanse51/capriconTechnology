@@ -52,7 +52,6 @@ export default function AdminDashboard() {
     } else {
       document.getElementById("incorrect").style.display = "none";
       closeComment();
-      window.location.reload(); // Refresh the page after form submission
 
       const url = "https://capricontechnologybackend.onrender.com/updateblog";
       try {
