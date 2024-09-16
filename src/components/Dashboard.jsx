@@ -59,7 +59,6 @@ export default function Dashboard() {
     } else {
       document.getElementById("incorrect").style.display = "none";
       closeModal();
-      window.location.reload();
 
       const url = "https://capricontechnologybackend.onrender.com/addblog";
       await fetch(url, {
