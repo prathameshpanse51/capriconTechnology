@@ -1,8 +1,24 @@
-# React + Vite
+# Blog Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+User Flow for Blog Website-
+1.Login or Sign-Up
+ - Option 1: Log in using email and password.
+ - Option 2: Sign in with Google for quicker access.
 
-Currently, two official plugins are available:
+2.Explore the Dashboard
+ - Upon logging in, users are directed to the dashboard.
+ - The dashboard displays a button to add a blog and the list of blogs added by that user:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+3.Admin Access
+ - To access the admin panel, change the URL path from /dashboard to /adminlogin.
+
+4.Admin Login
+ - Enter credentials to log in as an admin:
+    Username: admin
+    Password: admin@123
+
+5.Admin Dashboard
+ - Once logged in, the admin can manage blog details through the following functionalities:
+    Pending blogs - all the blogs submitted by the user and the admin can accept and reject a particular blog and send a comment.
+    Approved blogs - list of all approved blogs.
+    Rejected blogs - list of all rejected blogs.
