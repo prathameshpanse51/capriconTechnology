@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import AdminNavbar from "./AdminNavbar";
 
 export default function AdminDashboard() {
+  if (sessionStorage.getItem("admin") !== "success") {
+    window.location.href = "/adminlogin";
+  }
   // State hooks
   const [blogsList, setBlogsList] = useState([]);
   const [comment, setComment] = useState("");
@@ -227,7 +230,10 @@ export default function AdminDashboard() {
                 ))
               ) : (
                 <tr>
-                  <td colSpan="5" className="text-center text-xl my-4">
+                  <td
+                    colSpan="5"
+                    className="text-center text-xl font-semibold text-black py-6"
+                  >
                     No Pending Blog!
                   </td>
                 </tr>

@@ -2,6 +2,10 @@ import React, { useEffect, useState } from "react";
 import AdminNavbar from "./AdminNavbar";
 
 export default function ApprovedBlog() {
+  if (sessionStorage.getItem("admin") !== "success") {
+    window.location.href = "/adminlogin";
+  }
+
   const [blogsList, setBlogsList] = useState([]);
 
   useEffect(() => {
