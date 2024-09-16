@@ -12,7 +12,9 @@ export default function AdminDashboard() {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const res = await fetch("http://localhost:3000/blogslist");
+        const res = await fetch(
+          "https://capricontechnologybackend.onrender.com/blogslist"
+        );
         const data = await res.json();
         // Filter blogs with status 'pending'
         const pendingBlogs = data.filter((e) => e.status === "pending");
@@ -49,7 +51,7 @@ export default function AdminDashboard() {
       closeComment();
       window.location.reload(); // Refresh the page after form submission
 
-      const url = "http://localhost:3000/updateblog";
+      const url = "https://capricontechnologybackend.onrender.com/updateblog";
       try {
         const response = await fetch(url, {
           method: "PUT",

@@ -8,7 +8,9 @@ export default function BlogsList({ userEmail }) {
 
   useEffect(() => {
     const fetchBlogs = async () => {
-      const res = await fetch("http://localhost:3000/blogslist");
+      const res = await fetch(
+        "https://capricontechnologybackend.onrender.com/blogslist"
+      );
       const data = await res.json();
       if (isAuthenticated) {
         data.map((e) => {

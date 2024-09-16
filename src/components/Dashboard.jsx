@@ -61,7 +61,7 @@ export default function Dashboard() {
       closeModal();
       window.location.reload();
 
-      const url = "http://localhost:3000/addblog";
+      const url = "https://capricontechnologybackend.onrender.com/addblog";
       await fetch(url, {
         method: "POST",
         headers: {

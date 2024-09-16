@@ -6,7 +6,9 @@ export default function RejectedBlog() {
 
   useEffect(() => {
     const fetchBlogs = async () => {
-      const res = await fetch("http://localhost:3000/blogslist");
+      const res = await fetch(
+        "https://capricontechnologybackend.onrender.com/blogslist"
+      );
       const data = await res.json();
       data.map((e) => {
         if (e.status === "rejected") {

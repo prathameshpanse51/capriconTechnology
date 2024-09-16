@@ -14,7 +14,7 @@ export default function Admin() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const url = "http://localhost:3000/adminlogin";
+    const url = "https://capricontechnologybackend.onrender.com/adminlogin";
     const response = await fetch(url, {
       method: "GET",
       headers: {
